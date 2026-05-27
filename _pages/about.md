@@ -14,7 +14,7 @@ I am a PhD student in Data Science at City University of Hong Kong, supervised b
 
 My research interests include:
 
-- Multimodal Large Language Models, Multimodal Representation Learning
+- Multimodal Large Language Models, Multimodal Representation Learning 
 - LLM-driven Agents for Financial Trading
 - LLMs for Science, Healthcare, and Finance
 
