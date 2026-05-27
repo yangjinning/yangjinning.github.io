@@ -53,7 +53,7 @@ Jinning Yang, Wenjie Sun, Wen Shi. AAAI 2026.
   </li>
   <li>
     <strong>JA Economics Instructor</strong>, Junior Achievement (JA) China, Guangdong Experimental High School, Sep. 2013 - Jan. 2014.<br>
-    Taught JA economics extracurricular courses to secondary school students, covering basic economic concepts such as supply-demand pricing and marketing.<br>
+    Taught a JA economics extracurricular course to secondary school students, covering basic economic concepts such as supply-demand pricing and marketing.<br>
     Received the JA China Annual Outstanding Volunteer Team Award.
   </li>
 </ul>
