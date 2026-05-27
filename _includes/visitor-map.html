@@ -1,0 +1,78 @@
+<div class="visitor-map-module">
+  <p class="visitor-map-note">
+    GitHub Pages 是静态托管，页面本身不能直接读取访客 IP。这里预留了一个可选统计接口：
+    配置 Cloudflare Worker 后，会按访问者 IP 所属国家/地区聚合访问量；未配置时展示示例数据。
+  </p>
+
+  <div class="visitor-map-grid">
+    <div id="visitor-map" class="visitor-map-canvas" role="img" aria-label="全球访问来源地图"></div>
+    <aside class="visitor-map-panel">
+      <div class="visitor-map-total">
+        <span>Total Visits</span>
+        <strong id="visitor-total">--</strong>
+      </div>
+      <ol id="visitor-countries" class="visitor-country-list"></ol>
+      <p id="visitor-map-status" class="visitor-map-status"></p>
+    </aside>
+  </div>
+</div>
+
+<style>
+  .visitor-map-module { margin-top: 1.25rem; }
+  .visitor-map-note,
+  .visitor-map-status { color: #6b7280; font-size: 0.92rem; }
+  .visitor-map-grid { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 1rem; margin-top: 1rem; }
+  .visitor-map-canvas,
+  .visitor-map-panel { border: 1px solid #d9e2ec; border-radius: 8px; background: #fbfdff; }
+  .visitor-map-canvas {
+    position: relative;
+    min-height: 360px;
+    overflow: hidden;
+    background-image:
+      linear-gradient(rgba(61, 85, 112, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(61, 85, 112, 0.08) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+  .visitor-land { position: absolute; background: rgba(64, 145, 155, 0.2); border: 1px solid rgba(64, 145, 155, 0.25); }
+  .visitor-land.na { left: 8%; top: 19%; width: 24%; height: 30%; border-radius: 55% 40% 48% 42%; transform: rotate(-16deg); }
+  .visitor-land.sa { left: 26%; top: 52%; width: 12%; height: 30%; border-radius: 45% 55% 50% 60%; transform: rotate(18deg); }
+  .visitor-land.eu { left: 47%; top: 24%; width: 13%; height: 15%; border-radius: 60% 45% 45% 38%; }
+  .visitor-land.af { left: 48%; top: 40%; width: 15%; height: 26%; border-radius: 44% 55% 48% 58%; transform: rotate(-8deg); }
+  .visitor-land.as { left: 58%; top: 23%; width: 29%; height: 31%; border-radius: 55% 44% 42% 50%; transform: rotate(8deg); }
+  .visitor-land.au { left: 74%; top: 64%; width: 13%; height: 12%; border-radius: 55% 45% 48% 42%; transform: rotate(8deg); }
+  .visitor-point {
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: rgba(223, 91, 70, 0.28);
+    border: 2px solid rgba(223, 91, 70, 0.74);
+    box-shadow: 0 0 0 6px rgba(223, 91, 70, 0.1);
+  }
+  .visitor-point::after {
+    content: attr(data-label);
+    position: absolute;
+    left: calc(100% + 7px);
+    top: 50%;
+    transform: translateY(-50%);
+    color: #1f2937;
+    font-size: 0.72rem;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  .visitor-map-panel { padding: 1rem; }
+  .visitor-map-total { padding-bottom: 0.85rem; margin-bottom: 0.85rem; border-bottom: 1px solid #d9e2ec; }
+  .visitor-map-total span,
+  .visitor-map-total strong { display: block; }
+  .visitor-map-total span { color: #6b7280; font-size: 0.82rem; }
+  .visitor-map-total strong { color: #111827; font-size: 1.9rem; line-height: 1; }
+  .visitor-country-list { display: grid; gap: 0.7rem; margin: 0; padding-left: 1.25rem; }
+  .visitor-country-list li { color: #6b7280; }
+  .visitor-country-list strong { color: #111827; }
+  @media (max-width: 760px) {
+    .visitor-map-grid { grid-template-columns: 1fr; }
+    .visitor-map-canvas { min-height: 300px; }
+    .visitor-point::after { display: none; }
+  }
+</style>
