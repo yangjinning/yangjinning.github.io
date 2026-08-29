@@ -40,7 +40,7 @@ Jinning Yang, Wenjie Sun, Wen Shi. AAAI 2026.
 
 # Academic Service
 
-- Reviewer for TII, TNNLS, JBHI, and CIS.
+- Reviewer for TII, TSMCS, JBHI, and CIS.
 
 <span class='anchor' id='experience'></span>
 
