@@ -48,17 +48,17 @@ Jinning Yang, Wenjie Sun, Wen Shi. AAAI 2026.
 
 <ul class="teaching-list">
   <li>
-    <strong>Part-time Course Lecturer</strong>, The Hong Kong Polytechnic University, School of Accounting and Finance, Oct. 2018 - Jan. 2019.<br>
+    <strong>Part-time Course Lecturer</strong>, The Hong Kong Polytechnic University, School of Accounting and Finance<br>
     Taught a Python programming extracurricular course to undergraduate students, covering Python fundamentals, web scraping, Pandas-based data analysis, and textual analysis of 10-K annual reports.
   </li>
   <li>
-    <strong>Chinese Culture Instructor</strong>, AIESEC, Poland, Jan. 2015 - Feb. 2015.<br>
+    <strong>Chinese Culture Instructor</strong>, AIESEC, Poland<br>
     Delivered a six-week Chinese traditional culture course to primary and secondary school students in Poland.<br>
     Course topics included Chinese history, mythological stories, traditional festivals, food, tourist attractions, and related cultural topics, totaling more than 60 teaching hours.<br>
     Received positive feedback from local teachers and students and was featured by a local television station.
   </li>
   <li>
-    <strong>JA Economics Instructor</strong>, Junior Achievement (JA) China, Guangdong Experimental High School, Sep. 2013 - Jan. 2014.<br>
+    <strong>JA Economics Instructor</strong>, Junior Achievement (JA) China, Guangdong Experimental High School<br>
     Taught a JA economics extracurricular course to secondary school students, covering basic economic concepts such as supply-demand pricing and marketing.<br>
     Received the JA China Annual Outstanding Volunteer Team Award.
   </li>
