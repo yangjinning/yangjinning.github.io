@@ -16,7 +16,7 @@ My research interests include:
 
 - Multimodal Large Language Models, Multimodal Representation Learning 
 - LLM-driven Agents for Financial Trading
-- LLMs for Science, Healthcare, and Finance
+- LLMs for Science, Healthcare, and Investment
 
 <span class='anchor' id='research'></span>
 
