@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Jinning Yang"
-description              : "PhD Student, School of Data Science, City University of Hong Kong"
+description              : "PhD Student, College of Computing, City University of Hong Kong"
 repository               : "yangjinning/yangjinning.github.io"
 url                      : "https://yangjinning.github.io"
 google_scholar_stats_use_cdn : false
@@ -25,7 +25,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Jinning Yang"
   avatar           : "images/jinning-yang-avatar.png"
-  bio              : "PhD Student, School of Data Science, City University of Hong Kong"
+  bio              : "PhD Student, College of Computing, City University of Hong Kong"
   location         :
   employer         : #"Hefei General Machinery Research Institute"
   pubmed           : 
